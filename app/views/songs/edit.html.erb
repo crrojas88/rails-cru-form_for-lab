@@ -1,0 +1,10 @@
+<h1>Edit a Song</h1>
+<%= form_for(@song) do |f| %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    
+    <%= f.submit %>
+    <% end %>
+    <br>
+    <button><%= link_to "Home", songs_path %></button>
